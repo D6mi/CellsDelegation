@@ -18,8 +18,6 @@
 @interface AnotherTestTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) id<AnotherTestTableViewCellDelegate> delegate;
-@property (strong, nonatomic) NSIndexPath *indexPath;
-
-- (void)setupCellWithTitle:(NSString *)title selected:(BOOL)selected indexPath:(NSIndexPath *)indexPath delegate:(id<AnotherTestTableViewCellDelegate>)delegate;
+- (void)setupCellWithTitle:(NSString *)title selected:(BOOL)selected delegate:(id<AnotherTestTableViewCellDelegate>)delegate;
 
 @end

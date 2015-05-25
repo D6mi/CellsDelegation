@@ -122,7 +122,7 @@
         NSString *title = [self.people objectAtIndex:indexPath.row];
         BOOL selected = [self.selectedPeople containsObject:title];
         
-        [cell setupCellWithTitle:title selected:selected indexPath:indexPath delegate:self];
+        [cell setupCellWithTitle:title selected:selected delegate:self];
         
         return cell;
     }
